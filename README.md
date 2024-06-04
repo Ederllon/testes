@@ -1,2 +1,1 @@
-# movie-api
-uma api de busca de filmes.
+directorio de testes.
