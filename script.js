@@ -11,6 +11,6 @@ function getJoke() {
         jokeElement.textContent = data.value;
     })
     .catch(error => {
-        console.error('Error fetching joke:', error);
+        console.error('Error fetching joke:', error); 
     });
 }
