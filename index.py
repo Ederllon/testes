@@ -42,7 +42,6 @@ def ficha():
     print(60*'-')
 # fim funções
     # inicio body
-rodadas = int(input('Quantas vezes '))
-vezes = rodadas
+
 ficha()        
     # fim body  
