@@ -45,4 +45,4 @@ def ficha():
 rodadas = int(input('Quantas vezes '))
 vezes = rodadas
 ficha()        
-    # fim body 
+    # fim body  
