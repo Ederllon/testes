@@ -42,13 +42,20 @@ def ficha(x):
     print(60*'-')
 # fim funções
 # inicio body
-print('')
-rodadas = int(input('Quantas fichas irão ser criadas? '))
-print('')
-vezes = rodadas
-whilecount = 0
+while True:
 
-while vezes > 0:
-    ficha(whilecount)     
-    vezes = vezes -1
+    print('')
+    rodadas = int(input('Quantas fichas irão ser criadas? '))
+    print('')
+    vezes = rodadas
+    whilecount = 0
+
+    while vezes > 0:
+    
+        ficha(vezes)     
+        vezes = vezes -1
+
+    retry = str(input('bababoia: '))    
+
+
 # fim body 
