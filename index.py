@@ -13,7 +13,7 @@ armas = [nenhuma, faca, bastão, espada]
 narmas = armas.__len__() - 1
 # fim dados
 # incio funções
-def ficha():
+def ficha(x):
     hp = int(randint(1,100))
     atk = int(randint(1,100))
     df = int(randint(1,100))
@@ -27,21 +27,28 @@ def ficha():
         magper = 0
     if arm == 0:
         maestria = 0   
-    print(60*'-')
+      
+
+    print('Número da ficha: #{}'.format(x))  
     print('vida:',hp)
     print('Força:',atk)
     print('Defesa:',df)
     print('Velocidade:',spd)
     print('Mana:',man)
-    print(60*'-')
     print('Magia:',magias[mag])
     print('Maestria da Magia: {}%'.format(magperc))
-    print(60*'-')
     print('arma:',armas[arm])
     print('Maestria da Arma: {}%'.format(maestria))
     print(60*'-')
 # fim funções
     # inicio body
+print('')
+rodadas = int(input('Quantas fichas irão ser criadas? '))
+print('')
+vezes = rodadas
+whilecount = 0
 
-ficha()        
-    # fim body  
+while vezes > 0:
+    ficha(whilecount)     
+    vezes = vezes -1
+    # fim body 
