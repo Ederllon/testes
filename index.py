@@ -2,10 +2,10 @@
 from random import randint
 # fim importações
 # inicio dados
-nenhuma = {'nome':'nenhuma', 'dano' : 0}
-faca = {'nome':'faca', 'dano' : 3}
-bastão = {'nome':'bastão', 'dano' : 6}
-espada = {'nome':'espada', 'dano' : 7}
+nenhuma = {'nome':'nenhuma', 'dano' : 0, 'defesa': -100,}
+faca = {'nome':'faca', 'dano' : 3, 'defesa': 0,}
+bastão = {'nome':'bastão', 'dano' : 6, 'defesa': 0,}
+espada = {'nome':'espada', 'dano' : 7, 'defesa': 0,}
 
 magias = ['nenhuma', 'fire', 'wind', 'earth', 'eletric', 'water']
 nmagias = magias.__len__() - 1
