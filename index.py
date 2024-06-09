@@ -1,19 +1,18 @@
+# inicio importações
 from random import randint
-# armas
+# fim importações
+# inicio dados
 nenhuma = {'nome':'nenhuma', 'dano' : 0}
 faca = {'nome':'faca', 'dano' : 3}
 bastão = {'nome':'bastão', 'dano' : 6}
 espada = {'nome':'espada', 'dano' : 7}
 
-
 magias = ['nenhuma', 'fire', 'wind', 'earth', 'eletric', 'water']
 nmagias = magias.__len__() - 1
 armas = [nenhuma, faca, bastão, espada]
 narmas = armas.__len__() - 1
-
-
-
-
+# fim dados
+# incio funções
 def ficha():
     hp = int(randint(1,100))
     atk = int(randint(1,100))
@@ -41,5 +40,9 @@ def ficha():
     print('arma:',armas[arm])
     print('Maestria da Arma: {}%'.format(maestria))
     print(60*'-')
+# fim funções
+    # inicio body
+rodadas = int(input('Quantas vezes '))
+vezes = rodadas
 ficha()        
-            
+    # fim body 
