@@ -55,7 +55,12 @@ while True:
         ficha(vezes)     
         vezes = vezes -1
 
-    retry = str(input('bababoia: '))    
+    retry = str(input('Deseja finalizar o programa? '))    
+    if retry in  ['s']:
+        print('')
+        print('Programa finalizado! ')
+        print('')
+        break
 
 
 # fim body 
