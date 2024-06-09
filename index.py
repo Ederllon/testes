@@ -1,18 +1,45 @@
 # inicio importações
+
 from random import randint
+
 # fim importações
+
 # inicio dados
-nenhuma = {'nome':'nenhuma', 'dano' : 0, 'defesa': -100,}
-faca = {'nome':'faca', 'dano' : 3, 'defesa': 0,}
-bastão = {'nome':'bastão', 'dano' : 6, 'defesa': 0,}
-espada = {'nome':'espada', 'dano' : 7, 'defesa': 0,}
+
+maestria = 0
+
+nenhuma = {'nome':'nenhuma', 'dano' : 0, 'defesa': 0, 'critico': 0, }
+faca = {'nome':'faca', 'dano' : 2, 'defesa': 1, 'critico': 6, }
+bastão = {'nome':'bastão', 'dano' : 3, 'defesa': 5, 'critico': 0, }
+espada = {'nome':'espada', 'dano' : 7, 'defesa': 6, 'critico': 10, }
+arco = {'nome':'arco', 'dano' : 3, 'defesa': 1, 'critico': 10, }
+machado = {'nome':'machado', 'dano' : 10, 'defesa': 4, 'critico': 9, }
+martelo = {'nome':'martelo', 'dano' : 7, 'defesa': 4, 'critico': 1, }
+lança = {'nome':'lança', 'dano' : 6, 'defesa': 5, 'critico': 7,}
+escudo = {'nome':'escudo', 'dano' : 2, 'defesa': 50, 'critico': 0, }
+bengala = {'nome':'bengala', 'dano' : 1, 'defesa': 3, 'critico': 0, }
+manopla = {'nome':'manopla', 'dano' : 2, 'defesa': 10, 'critico': 0, }
+chicote = {'nome':'chicote', 'dano' : 2, 'defesa': -90, 'critico': 1, }
+canivete = {'nome':'canivete', 'dano' : 3, 'defesa': 0, 'critico': 5, }
+machete =  {'nome':'machete', 'dano' : 4, 'defesa': 6, 'critico': 6, }
+pá = {'nome':'pá', 'dano' : 3, 'defesa': 4, 'critico': 0, }
+foice = {'nome':'foice', 'dano' : 6, 'defesa': 5, 'critico': 6, }
+trident = {'nome':'trident', 'dano' : 6, 'defesa': 6, 'critico': 6, }
+marreta = {'nome':'marreta', 'dano' : 8, 'defesa': 5, 'critico': 1, }
+anel = {'nome':'anel de poder', 'dano' : maestria, 'defesa': maestria, 'critico': 0, }
+
+armas = [nenhuma, faca, bastão, espada, arco, machado, martelo, lança, escudo, bengala, manopla, chicote, canivete, machete, pá, foice, marreta  ]
+narmas = armas.__len__() - 1
 
 magias = ['nenhuma', 'fire', 'wind', 'earth', 'eletric', 'water']
 nmagias = magias.__len__() - 1
-armas = [nenhuma, faca, bastão, espada]
-narmas = armas.__len__() - 1
+
+
+
 # fim dados
+
 # incio funções
+
 def ficha(x):
     hp = int(randint(1,100))
     atk = int(randint(1,100))
@@ -39,9 +66,12 @@ def ficha(x):
     print('Maestria da Magia: {}%'.format(magperc))
     print('arma:',armas[arm])
     print('Maestria da Arma: {}%'.format(maestria))
-    print(60*'-')
+    print(62*'-')
+
 # fim funções
+    
 # inicio body
+    
 while True:
 
     print('')
