@@ -41,7 +41,7 @@ def ficha(x):
     print('Maestria da Arma: {}%'.format(maestria))
     print(60*'-')
 # fim funções
-    # inicio body
+# inicio body
 print('')
 rodadas = int(input('Quantas fichas irão ser criadas? '))
 print('')
@@ -51,4 +51,4 @@ whilecount = 0
 while vezes > 0:
     ficha(whilecount)     
     vezes = vezes -1
-    # fim body 
+# fim body 
