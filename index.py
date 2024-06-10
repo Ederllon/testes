@@ -53,10 +53,11 @@ def ficha(x):
     arco = {'nome':'arco', 'dano' : 3, 'defesa': 1, 'critico': prec, }
     cajado = {'nome':'cajado', 'dano' : int((magperc + maestria)/2), 'defesa': man, 'critico': maestria, }
     anel_de_energia = {'nome':'anel de energia', 'dano' : man, 'defesa': man, 'critico': man, }
-    sai = {'nome':'sai', 'dano' : 3, 'defesa': 2, 'critico': spd, }
+    sai = {'nome':'sai', 'dano' : 2, 'defesa': 2, 'critico': spd, }
     soco = {'nome':'soco inglês', 'dano' : atk , 'defesa': df-30, 'critico': -1 }
     luva = {'nom':'luvas', 'dano' : 1, 'defesa': 1, 'critico': atk-50,}
     pedra = {'nome':'pedra', 'dano' : atk-prec, 'defesa': 0, 'critico': prec, }
+
 # fim dados com adicionaveis
     
     # inicio dados insert 
