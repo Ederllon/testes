@@ -4,8 +4,7 @@ from random import randint
 
 # fim importações
 
-# inicio                                                                                               
-
+# inicio dados                                                                                       
 
 nenhuma = {'nome':'nenhuma', 'dano' : 0, 'defesa': 0, 'critico': 0, }
 faca = {'nome':'faca', 'dano' : 2, 'defesa': 1, 'critico': 6, }
@@ -44,31 +43,30 @@ def ficha(x):
     spd = int(randint(1,100))
     car = int(randint(1,100))
     man = int(randint(1,100))
-
     magperc = int(randint(1,100))
     maestria = int(randint(1,100))
 
+# inicio dados com adicionaveis     
+
     anel = {'nome':'anel de poder', 'dano' : magperc, 'defesa': man, 'critico': maestria, }
+
+# fim dados com adicionaveis
     
-    armas = [nenhuma, faca, bastão, espada, arco, machado, martelo, lança, escudo, bengala, manopla, chicote, canivete, machete, pá, foice, marreta , anel  ]
+    # inicio dados insert 
+    armas = [nenhuma, faca, bastão, espada, arco, machado, martelo, lança, escudo, bengala, manopla, chicote, canivete, machete, pá, foice, marreta , anel]
     narmas = armas.__len__() - 1
-    
+    # fim dados insert
     mag = int(randint(0,nmagias))
     arm = int(randint(0,narmas))
 
-
-
-
-
-    
     if mag == 0:
         magperc = 0
     if arm == 0:
         maestria = 0   
       
 
-    print('Número da ficha: #{}'.format(x))  
-    print('vida:',hp)
+    print('ficha: #{} | nivel de poder: {}'.format(x, 0       ))
+    print('Vida:',hp)
     print('Força:',atk)
     print('Defesa:',df)
     print('Velocidade:',spd)
