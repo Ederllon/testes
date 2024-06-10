@@ -99,10 +99,9 @@ while True:
     print('')
     vezes = rodadas
     
-
     for count in range(0,vezes):
-        ficha(count)     
-        
+        ficha(count+1)     
+
     retry = str(input('Deseja finalizar o programa? '))    
     if retry in  ['s']:
         print('')
