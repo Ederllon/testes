@@ -98,13 +98,11 @@ while True:
     rodadas = int(input('Quantas fichas irão ser criadas? '))
     print('')
     vezes = rodadas
-    whilecount = 0
-
-    while vezes > 0:
     
-        ficha(vezes)     
-        vezes = vezes -1
 
+    for count in range(0,vezes):
+        ficha(count)     
+        
     retry = str(input('Deseja finalizar o programa? '))    
     if retry in  ['s']:
         print('')
