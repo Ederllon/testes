@@ -52,7 +52,7 @@ def ficha(x):
     arm = int(randint(0,narmas))
     maestria = int(randint(1,100))
     if mag == 0:
-        magper = 0
+        magperc = 0
     if arm == 0:
         maestria = 0   
       
