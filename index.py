@@ -38,21 +38,22 @@ nmagias = magias.__len__() - 1
 # incio funções
 
 def ficha(x):
-    man = int(randint(1,100))
-    magperc = int(randint(1,100))
-    maestria = int(randint(1,100))
-    anel = {'nome':'anel de poder', 'dano' : magperc, 'defesa': man, 'critico': maestria, }
-    armas = [nenhuma, faca, bastão, espada, arco, machado, martelo, lança, escudo, bengala, manopla, chicote, canivete, machete, pá, foice, marreta , anel  ]
-    narmas = armas.__len__() - 1
-    
     hp = int(randint(1,100))
     atk = int(randint(1,100))
     df = int(randint(1,100))
     spd = int(randint(1,100))
     car = int(randint(1,100))
+    man = int(randint(1,100))
+
+    magperc = int(randint(1,100))
+    maestria = int(randint(1,100))
+
+    anel = {'nome':'anel de poder', 'dano' : magperc, 'defesa': man, 'critico': maestria, }
+    
+    armas = [nenhuma, faca, bastão, espada, arco, machado, martelo, lança, escudo, bengala, manopla, chicote, canivete, machete, pá, foice, marreta , anel  ]
+    narmas = armas.__len__() - 1
     
     mag = int(randint(0,nmagias))
-   
     arm = int(randint(0,narmas))
 
 
