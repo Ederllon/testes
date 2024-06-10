@@ -4,9 +4,8 @@ from random import randint
 
 # fim importações
 
-# inicio dados
+# inicio                                                                                               
 
-maestria = 0
 
 nenhuma = {'nome':'nenhuma', 'dano' : 0, 'defesa': 0, 'critico': 0, }
 faca = {'nome':'faca', 'dano' : 2, 'defesa': 1, 'critico': 6, }
@@ -26,10 +25,8 @@ pá = {'nome':'pá', 'dano' : 3, 'defesa': 4, 'critico': 0, }
 foice = {'nome':'foice', 'dano' : 6, 'defesa': 5, 'critico': 6, }
 trident = {'nome':'trident', 'dano' : 6, 'defesa': 6, 'critico': 6, }
 marreta = {'nome':'marreta', 'dano' : 8, 'defesa': 5, 'critico': 1, }
-anel = {'nome':'anel de poder', 'dano' : maestria, 'defesa': maestria, 'critico': 0, }
 
-armas = [nenhuma, faca, bastão, espada, arco, machado, martelo, lança, escudo, bengala, manopla, chicote, canivete, machete, pá, foice, marreta , anel  ]
-narmas = armas.__len__() - 1
+
 
 magias = ['nenhuma', 'fire', 'wind', 'earth', 'eletric', 'water']
 nmagias = magias.__len__() - 1
@@ -41,16 +38,28 @@ nmagias = magias.__len__() - 1
 # incio funções
 
 def ficha(x):
+    man = int(randint(1,100))
+    magperc = int(randint(1,100))
+    maestria = int(randint(1,100))
+    anel = {'nome':'anel de poder', 'dano' : magperc, 'defesa': man, 'critico': maestria, }
+    armas = [nenhuma, faca, bastão, espada, arco, machado, martelo, lança, escudo, bengala, manopla, chicote, canivete, machete, pá, foice, marreta , anel  ]
+    narmas = armas.__len__() - 1
+    
     hp = int(randint(1,100))
     atk = int(randint(1,100))
     df = int(randint(1,100))
     spd = int(randint(1,100))
     car = int(randint(1,100))
-    man = int(randint(1,100))
+    
     mag = int(randint(0,nmagias))
-    magperc = int(randint(1,100))
+   
     arm = int(randint(0,narmas))
-    maestria = int(randint(1,100))
+
+
+
+
+
+    
     if mag == 0:
         magperc = 0
     if arm == 0:
@@ -66,7 +75,7 @@ def ficha(x):
     print('Mana:',man)
     print('Magia:',magias[mag])
     print('Maestria da Magia: {}%'.format(magperc))
-    print('arma:',armas[arm])
+    print('Arma:',armas[arm])
     print('Maestria da Arma: {}%'.format(maestria))
     print(62*'-')
 
