@@ -28,7 +28,7 @@ trident = {'nome':'trident', 'dano' : 6, 'defesa': 6, 'critico': 6, }
 marreta = {'nome':'marreta', 'dano' : 8, 'defesa': 5, 'critico': 1, }
 anel = {'nome':'anel de poder', 'dano' : maestria, 'defesa': maestria, 'critico': 0, }
 
-armas = [nenhuma, faca, bastão, espada, arco, machado, martelo, lança, escudo, bengala, manopla, chicote, canivete, machete, pá, foice, marreta  ]
+armas = [nenhuma, faca, bastão, espada, arco, machado, martelo, lança, escudo, bengala, manopla, chicote, canivete, machete, pá, foice, marreta , anel  ]
 narmas = armas.__len__() - 1
 
 magias = ['nenhuma', 'fire', 'wind', 'earth', 'eletric', 'water']
@@ -45,6 +45,7 @@ def ficha(x):
     atk = int(randint(1,100))
     df = int(randint(1,100))
     spd = int(randint(1,100))
+    car = int(randint(1,100))
     man = int(randint(1,100))
     mag = int(randint(0,nmagias))
     magperc = int(randint(1,100))
@@ -61,6 +62,7 @@ def ficha(x):
     print('Força:',atk)
     print('Defesa:',df)
     print('Velocidade:',spd)
+    print('Carisma:', car)
     print('Mana:',man)
     print('Magia:',magias[mag])
     print('Maestria da Magia: {}%'.format(magperc))
